@@ -24,9 +24,12 @@
 </template>
 
 <script>
-import Sidebar from './component/Sidebar.vue'
+import Sidebar from './components/Sidebar.vue'
 export default {
-  components: { 'sidebar': Sidebar }
+  name: 'app',
+  components: {
+    Sidebar
+  }
 }
 </script>
 

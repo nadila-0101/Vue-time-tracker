@@ -2,6 +2,7 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
+import store from './store'
 import Home from './components/Home.vue'
 import TimeEntries from './components/TimeEntries.vue'
 
@@ -27,6 +28,7 @@ const router = new VueRouter({
 new Vue({ // eslint-disable-line no-new
   el: '#app',
   router,
+  store,
   ...App
 })
 

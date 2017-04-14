@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="time-enteris">
     <router-link
       v-if="$route.path !== '/time-entries/log-time'"
       to="/time-entries/log-time"
@@ -16,7 +16,7 @@
     <router-view></router-view>
 
     <div class="time-entries">
-      <p v-if="!timeEntries.length"><strong>No Mission Yet</strong></p>
+      <p v-if="!plans.length"><strong>No Mission Yet</strong></p>
 
       <div class="list-group">
         <a class="list-group-item" v-for="(plan,index) in plans">
@@ -64,7 +64,7 @@
   export default {
     name: 'TimeEntries',
     computed: {
-      plan () {
+      plans () {
         return this.$store.state.list
       }
     },
