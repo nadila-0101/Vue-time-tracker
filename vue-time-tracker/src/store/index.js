@@ -10,13 +10,7 @@ Vue.use(Vuex)
 
 const state = {
   totalTime: 0,
-  list: [{
-    name: 'nana',
-    avatar: '',
-    data: '2017/4/14',
-    totalTime: '6',
-    comment: '淘宝抢衣服'
-  }]
+  list: []
 }
 
 export default new Vuex.Store({
